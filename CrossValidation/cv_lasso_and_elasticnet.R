@@ -24,7 +24,8 @@ cvlasso<-function (x, y, lambda, blocks, sig) {
     x_test = x[omit, ]
     y_test = y[omit]
     fit <- glmnet(scale(x_train), y_train, lambda = lambda, family = "binomial")  
-    # if this is for elastic-net model, then  fit <- glmnet(scale(x_train), y_train, lambda = lambda, family = "binomial",alpha=0.5)
+    # if this is for elastic-net model, then:
+    # fit <- glmnet(scale(x_train), y_train, lambda = lambda, family = "binomial",alpha=0.5)
     
     x_test = cbind(rep(1, length(y_test)), scale(x_test))
     coef = coef(fit)   ## coefficient matrix after glnmet function
