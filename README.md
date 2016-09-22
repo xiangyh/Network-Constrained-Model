@@ -1,2 +1,2 @@
-# Network_Constrained_Model
+# Network Constrained Model
 This is a project for my undergraduate thesis
