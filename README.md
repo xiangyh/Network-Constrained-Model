@@ -1,2 +1,2 @@
 # Network Constrained Model
-This is a project for my undergraduate thesis
+project for undergraduate thesis
